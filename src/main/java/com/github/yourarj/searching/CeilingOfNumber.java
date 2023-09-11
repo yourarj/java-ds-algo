@@ -23,6 +23,6 @@ public class CeilingOfNumber {
     }
     // when the condition breaks from above while
     // the start already points the larger
-    return start > haystack.length ? Optional.empty() : Optional.of(start);
+    return start == haystack.length ? Optional.empty() : Optional.of(haystack[start]);
   }
 }
