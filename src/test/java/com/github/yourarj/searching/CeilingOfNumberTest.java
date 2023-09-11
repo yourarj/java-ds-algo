@@ -1,7 +1,5 @@
 package com.github.yourarj.searching;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.Optional;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -29,12 +27,22 @@ class CeilingOfNumberTest {
   }
 
   @Test
-  void findCeilingOfNumberSmallerThanLastNumber() {
+  void findCeilingOfNumberSmallerThanFirstNumber() {
     CeilingOfNumber ceilingOfNumber = new CeilingOfNumber();
     int needle = -30;
     Integer[] hayStack = {1, 3, 5, 7, 9, 18, 19, 20, 21};
     Optional<Integer> output = ceilingOfNumber.findCeilingOfNumber(needle, hayStack);
 
     Assertions.assertEquals(Optional.of(1), output);
+  }
+
+  @Test
+  void findFloorOfNumberSmallerInEmptyArray() {
+    CeilingOfNumber ceilingOfNumber = new CeilingOfNumber();
+    int needle = 1;
+    Integer[] hayStack = {};
+    Optional<Integer> output = ceilingOfNumber.findCeilingOfNumber(needle, hayStack);
+
+    Assertions.assertEquals(Optional.empty(), output);
   }
 }
