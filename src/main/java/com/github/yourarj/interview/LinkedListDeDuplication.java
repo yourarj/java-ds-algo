@@ -72,14 +72,17 @@ public class LinkedListDeDuplication {
       if (!current.equals(current.next) && !current.equals(prev)) {
         if (newHead == null) {
           newHead = current;
-          prevUnique = current;
         } else {
           prevUnique.next = current;
         }
+          prevUnique = current;
       }
       prev = current;
       current = current.next;
     }
+
+    if(prevUnique != null) prevUnique.next = null;
+
     return newHead;
   }
 }
