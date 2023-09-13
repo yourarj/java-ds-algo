@@ -8,8 +8,8 @@ class FindElementPositionInInfiniteSortedArrayTest {
 
   @Test
   void findPosition() {
-    FindElementPositionInInfiniteSortedArray findInInfinite =
-        new FindElementPositionInInfiniteSortedArray();
+    SearchInfiniteSortedArray findInInfinite =
+        new SearchInfiniteSortedArray();
     int inputElement = 15;
     int[] inputArray = {
       0, 2, 3, 4, 6, 7, 9, 12, 13, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
@@ -23,8 +23,8 @@ class FindElementPositionInInfiniteSortedArrayTest {
 
   @Test
   void findPositionFirstElement() {
-    FindElementPositionInInfiniteSortedArray findInInfinite =
-        new FindElementPositionInInfiniteSortedArray();
+    SearchInfiniteSortedArray findInInfinite =
+        new SearchInfiniteSortedArray();
     int inputElement = 0;
     int[] inputArray = {
       0, 2, 3, 4, 6, 7, 9, 12, 13, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,

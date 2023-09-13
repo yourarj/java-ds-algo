@@ -1,7 +1,7 @@
 package com.github.yourarj.searching;
 
 /** Find position of an element in a sorted array of infinite numbers */
-public class FindElementPositionInInfiniteSortedArray {
+public class SearchInfiniteSortedArray {
   /**
    * Finds the position (index) of specified elements in infinite sorted array
    *
