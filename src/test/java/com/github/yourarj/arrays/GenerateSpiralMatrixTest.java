@@ -1,8 +1,5 @@
 package com.github.yourarj.arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.Arrays;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

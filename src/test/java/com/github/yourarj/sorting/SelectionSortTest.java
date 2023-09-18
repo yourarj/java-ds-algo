@@ -1,8 +1,6 @@
 package com.github.yourarj.sorting;
 
-import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.Arrays;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -14,10 +12,8 @@ class SelectionSortTest {
     int[] input = {8, 7, 6, 5, 4, 3, 2, 1};
     int[] expected = {1, 2, 3, 4, 5, 6, 7, 8};
 
-    System.out.printf("input: %s\n", Arrays.toString(input));
     // perform selection sort on array
     target.sort(input);
-    System.out.printf("input: %s\noutput: %s\n", Arrays.toString(input), Arrays.toString(expected));
     Assertions.assertArrayEquals(expected, input);
   }
 
@@ -26,10 +22,8 @@ class SelectionSortTest {
     int[] input = {};
     int[] expected = {};
 
-    System.out.printf("input: %s\n", Arrays.toString(input));
     // perform selection sort on array
     target.sort(input);
-    System.out.printf("input: %s\noutput: %s\n", Arrays.toString(input), Arrays.toString(expected));
     Assertions.assertArrayEquals(expected, input);
   }
 
@@ -38,10 +32,8 @@ class SelectionSortTest {
     int[] input = {8};
     int[] expected = {8};
 
-    System.out.printf("input: %s\n", Arrays.toString(input));
     // perform selection sort on array
     target.sort(input);
-    System.out.printf("input: %s\noutput: %s\n", Arrays.toString(input), Arrays.toString(expected));
     Assertions.assertArrayEquals(expected, input);
   }
 
@@ -52,8 +44,6 @@ class SelectionSortTest {
 
     // perform selection sort on array
     target.sort(input);
-
-    System.out.printf("input: %s\noutput: %s\n", Arrays.toString(input), Arrays.toString(expected));
     Assertions.assertArrayEquals(expected, input);
   }
 
@@ -64,9 +54,6 @@ class SelectionSortTest {
 
     // perform selection sort on array
     target.sort(input);
-
-    System.out.printf("input: %s\noutput: %s\n", Arrays.toString(input), Arrays.toString(expected));
-
     Assertions.assertArrayEquals(expected, input);
   }
 }

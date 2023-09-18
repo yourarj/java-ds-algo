@@ -1,7 +1,8 @@
 # Deduplication in Singly-Linked-List
 ## Asked by: Oracle
 
-Remove all instances of element from singly linked list so the resulting linked list will only contain only elements whose occurrence was exactly once. 
+Remove all instances of element from singly linked list so the resulting linked list will only contain elements whose
+occurrence was exactly once.
 
 e.g.
 Example 01

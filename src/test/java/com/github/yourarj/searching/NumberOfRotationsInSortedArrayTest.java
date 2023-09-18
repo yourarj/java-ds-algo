@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class NumberOfRotationsInSortedArrayTest {
-  NumberOfRotationsInSortedArray target = new NumberOfRotationsInSortedArray();
+  private final NumberOfRotationsInSortedArray target = new NumberOfRotationsInSortedArray();
 
   @Test
   void numberOfRotations() {

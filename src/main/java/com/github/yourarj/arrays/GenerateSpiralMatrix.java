@@ -1,6 +1,5 @@
 package com.github.yourarj.arrays;
 
-import java.util.ArrayList;
 
 public class GenerateSpiralMatrix {
   enum Direction {
@@ -11,21 +10,18 @@ public class GenerateSpiralMatrix {
   }
 
   public int[][] generateMatrix(int n) {
-    int rows = n;
-    int columns = n;
 
-    int totalElements = rows * columns;
+      int totalElements = n * n;
 
     // initial direction
     Direction direction = Direction.RIGHT;
 
     // boundaries
-    int right = columns;
-    int bottom = rows;
+    int right = n;
+    int bottom = n;
     int left = 0;
     int top = 0;
 
-    ArrayList<Integer> list = new ArrayList<>();
     int i = 0, j = 0;
     int element = 1;
     int[][] matrix = new int[n][n];

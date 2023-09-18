@@ -1,5 +1,7 @@
 package com.github.yourarj.arrays;
 
+import java.util.Arrays;
+
 public class SetMatrixZeroes {
   public void setZeroes(int[][] matrix) {
     boolean fr = false, fc = false;
@@ -21,9 +23,7 @@ public class SetMatrixZeroes {
       }
     }
     if (fr) {
-      for (int j = 0; j < matrix[0].length; j++) {
-        matrix[0][j] = 0;
-      }
+      Arrays.fill(matrix[0], 0);
     }
     if (fc) {
       for (int i = 0; i < matrix.length; i++) {

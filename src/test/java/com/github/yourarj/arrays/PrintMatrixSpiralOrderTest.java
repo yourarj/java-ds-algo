@@ -1,13 +1,11 @@
 package com.github.yourarj.arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class PrintMatrixSpiralOrderTest {
-  private PrintMatrixSpiralOrder target = new PrintMatrixSpiralOrder();
+  private final PrintMatrixSpiralOrder target = new PrintMatrixSpiralOrder();
 
   @Test
   void spiralOrder() {

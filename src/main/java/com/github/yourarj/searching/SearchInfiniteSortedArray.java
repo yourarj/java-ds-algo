@@ -22,16 +22,12 @@ public class SearchInfiniteSortedArray {
     // stop the while loop when needle is smaller than or equal to end
     // else move forward and also increase the chunk size
     while (needle > haystack[end]) {
-      System.out.printf(
-          "start: %02d, end: %02d and haystack[end]: %02d%n", start, end, haystack[end]);
       int newStart = end + 1;
       end = newStart + (end - start) * 2 + 1;
       start = newStart;
     }
-    System.out.printf(
-        "Found: start: %02d, end: %02d and haystack[end]: %02d%n", start, end, haystack[end]);
 
-    // it broke out so we got our start end
+    // it broke out, so we got our start end
     // now just apply our good old binary search
 
     return binarySearch(needle, haystack, start, end);

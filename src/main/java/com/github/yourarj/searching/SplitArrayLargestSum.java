@@ -21,11 +21,10 @@ public class SplitArrayLargestSum {
     return start;
   }
 
-  private int numberOfChunksFormed(final int targetSum, final int[] nums) {
+  private int numberOfChunksFormed(final int targetSum, final int[] numbers) {
     int chunks = 1;
     int chunkSum = 0;
-    for (int i = 0; i < nums.length; i++) {
-      int num = nums[i];
+    for (int num : numbers) {
       if ((chunkSum + num) > targetSum) {
         chunks++;
         chunkSum = num;

@@ -14,7 +14,6 @@ public class BubbleSort {
       }
       // save extra work if already sorted
       if (!swappedAtLeastOnce) {
-        System.out.println("breaking");
         break;
       }
     }

@@ -8,7 +8,6 @@ public class PeakInMountainArray {
     int end = mountain.length - 1;
 
     while (start != end) {
-      System.out.printf("start: %02d, end: %02d\n", start, end);
       int mid = start + (end - start) / 2;
 
       if (mountain[mid + 1] > mountain[mid]) {
@@ -17,7 +16,6 @@ public class PeakInMountainArray {
         end = mid;
       }
     }
-    System.out.printf("start: %02d, end: %02d\n", start, end);
     return mountain[start];
   }
 }

@@ -11,9 +11,6 @@ public class SearchInRotatedSortedArrayWithDuplicates {
    */
   public int search(int needle, int[] haystack) {
     int peakOfMountain = findPivotInSortedRotatedArray(haystack);
-    //    System.out.printf(
-    //        "The pivot of array is haystack[%02d]: `%02d`\n", peakOfMountain,
-    // haystack[peakOfMountain]);
     int pos = binarySearch(needle, haystack, 0, peakOfMountain);
     if (-1 == pos) {
       pos = binarySearch(needle, haystack, peakOfMountain + 1, haystack.length - 1);
