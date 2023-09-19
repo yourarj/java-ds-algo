@@ -31,4 +31,20 @@ class ProblemFirstMissingPositiveTest {
     int actualResult = target.firstMissingPositive(input);
     Assertions.assertEquals(expectedResult, actualResult);
   }
+
+  @Test
+  void firstMissingPositiveCase04() {
+    int[] input = {1};
+    int expectedResult = 2;
+    int actualResult = target.firstMissingPositive(input);
+    Assertions.assertEquals(expectedResult, actualResult);
+  }
+
+  @Test
+  void firstMissingPositiveCase05() {
+    int[] input = {1, 1};
+    int expectedResult = 2;
+    int actualResult = target.firstMissingPositive(input);
+    Assertions.assertEquals(expectedResult, actualResult);
+  }
 }
