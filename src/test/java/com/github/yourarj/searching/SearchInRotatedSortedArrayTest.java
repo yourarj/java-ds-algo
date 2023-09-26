@@ -5,16 +5,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class SearchInRotatedSortedArrayTest {
+  private final SearchInRotatedSortedArray target = new SearchInRotatedSortedArray();
 
   @Test
   void searchInHappyPathScenario() {
     int needle = 5;
     int[] haystack = {6, 7, 8, 9, 10, 12, 0, 2, 5};
     int expectedOutput = haystack.length - 1;
-
-    SearchInRotatedSortedArray search = new SearchInRotatedSortedArray();
-
-    int actualOutput = search.search(needle, haystack);
+    int actualOutput = target.search(needle, haystack);
 
     assertEquals(expectedOutput, actualOutput);
   }
@@ -24,10 +22,7 @@ class SearchInRotatedSortedArrayTest {
     int needle = 6;
     int[] haystack = {6, 7, 8, 9, 10, 12, 0, 2, 5};
     int expectedOutput = 0;
-
-    SearchInRotatedSortedArray search = new SearchInRotatedSortedArray();
-
-    int actualOutput = search.search(needle, haystack);
+    int actualOutput = target.search(needle, haystack);
 
     assertEquals(expectedOutput, actualOutput);
   }
@@ -37,10 +32,7 @@ class SearchInRotatedSortedArrayTest {
     int needle = 12;
     int[] haystack = {11};
     int expectedOutput = -1;
-
-    SearchInRotatedSortedArray search = new SearchInRotatedSortedArray();
-
-    int actualOutput = search.search(needle, haystack);
+    int actualOutput = target.search(needle, haystack);
 
     assertEquals(expectedOutput, actualOutput);
   }
@@ -50,10 +42,7 @@ class SearchInRotatedSortedArrayTest {
     int needle = 13;
     int[] haystack = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22};
     int expectedOutput = 2;
-
-    SearchInRotatedSortedArray search = new SearchInRotatedSortedArray();
-
-    int actualOutput = search.search(needle, haystack);
+    int actualOutput = target.search(needle, haystack);
 
     assertEquals(expectedOutput, actualOutput);
   }

@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class SearchMountainArrayTest {
+  private final SearchMountainArray target = new SearchMountainArray();
 
   @Test
   void searchInMountainNormalCase() {
-    SearchMountainArray target = new SearchMountainArray();
     int needle = 5;
     int[] haystack = {0, 1, 2, 6, 5, 3};
     int expectedOutput = 4;
@@ -17,7 +17,6 @@ class SearchMountainArrayTest {
 
   @Test
   void searchInMountainInSmalledPossibleMountain() {
-    SearchMountainArray target = new SearchMountainArray();
     int needle = 3;
     int[] haystack = {2,6, 5, 3};
     int expectedOutput = 3;
