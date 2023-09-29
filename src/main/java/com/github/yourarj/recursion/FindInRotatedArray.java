@@ -13,12 +13,14 @@ public class FindInRotatedArray {
       return mid;
     }
 
+    // if left half of array is sorted
     if (arr[start] < arr[mid]) {
       if (needle >= arr[start] && needle < arr[mid]) {
         end = mid - 1;
       } else {
         start = mid + 1;
       }
+      // or if right half of array is sorted
     } else {
       if (needle > arr[mid] && needle <= arr[end]) {
         start = mid + 1;
