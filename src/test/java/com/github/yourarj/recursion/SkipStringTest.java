@@ -4,14 +4,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class SkipCharacterTest {
-  private final SkipCharacter target = new SkipCharacter();
+class SkipStringTest {
+  private final SkipString target = new SkipString();
 
   @Test
   void skipACharacter() {
-    final String input = "aabcbbbbd";
-    final String expected = "aacd";
-    final char charToSkip = 'b';
+    final String input = "aabcbbrajbbd";
+    final String expected = "aabcbbbbd";
+    final String charToSkip = "raj";
 
     final String output = target.skipACharacter(input, charToSkip);
     assertEquals(expected, output);
@@ -21,7 +21,7 @@ class SkipCharacterTest {
   void shouldNotImpactEmptyString() {
     final String input = "";
     final String expected = "";
-    final char charToSkip = 'b';
+    final String charToSkip = "baj";
 
     final String output = target.skipACharacter(input, charToSkip);
     assertEquals(expected, output);
@@ -31,7 +31,7 @@ class SkipCharacterTest {
   void shouldNotStringWithoutSkipChar() {
     final String input = "aadvdsafashaha";
     final String expected = "aadvdsafashaha";
-    final char charToSkip = 'b';
+    final String charToSkip = "baja";
 
     final String output = target.skipACharacter(input, charToSkip);
     assertEquals(expected, output);
