@@ -12,7 +12,15 @@ class SubsetOfCharactersTest {
   void subsets01HappyPath() {
     String input = "aw";
     List<String> subsets = target.subsets(input);
-    List<String> expected = List.of("aw", "a", "w");
+    List<String> expected = List.of("aw", "a", "w", "");
+    assertIterableEquals(expected, subsets);
+  }
+
+  @Test
+  void subsets01HappyPathAbc() {
+    String input = "abc";
+    List<String> subsets = target.subsets(input);
+    List<String> expected = List.of("abc", "ab", "ac", "a", "bc", "b", "c", "");
     assertIterableEquals(expected, subsets);
   }
 }

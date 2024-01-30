@@ -11,7 +11,7 @@ public class SubsetOfCharacters {
   private List<String> subsets(String processed, String unprocessed) {
     if (unprocessed.isEmpty()) {
       List<String> list = new ArrayList<>();
-      if (!processed.isEmpty()) list.add(processed);
+      list.add(processed);
       return list;
     }
     List<String> left = subsets(processed + unprocessed.charAt(0), unprocessed.substring(1));
