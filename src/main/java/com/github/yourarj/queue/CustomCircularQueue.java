@@ -1,16 +1,17 @@
 package com.github.yourarj.queue;
 
-public class CustomQueue implements ICustomQueue {
-  protected int[] data;
+public class CustomCircularQueue implements ICustomQueue {
   private static final int DEFAULT_SIZE = 10;
-  protected int back;
+  private final int[] data;
+  private int front;
+  private int back;
 
-  public CustomQueue() {
+  public CustomCircularQueue() {
     this(DEFAULT_SIZE);
   }
 
-  public CustomQueue(int size) {
-    this.data = new int[size];
+  public CustomCircularQueue(int defaultSize) {
+    data = new int[defaultSize];
   }
 
   @Override
@@ -18,7 +19,8 @@ public class CustomQueue implements ICustomQueue {
     if (isFull()) {
       throw new IllegalStateException("Queue is full!");
     }
-    data[back++] = integer;
+    data[front] = integer;
+    front = (front + 1) % data.length;
     return true;
   }
 
@@ -27,7 +29,8 @@ public class CustomQueue implements ICustomQueue {
     if (isFull()) {
       return false;
     }
-    data[back++] = integer;
+    data[front] = integer;
+    front = (front + 1) % data.length;
     return true;
   }
 
@@ -36,12 +39,8 @@ public class CustomQueue implements ICustomQueue {
     if (isEmpty()) {
       throw new IllegalStateException("Queue is Empty!");
     }
-    Integer value = data[0];
-    if (back > 1) {
-      System.arraycopy(data, 1, data, 0, back - 1);
-    }
-    back--;
-    return value;
+    back = (back + 1) % data.length;
+    return data[back];
   }
 
   @Override
@@ -49,10 +48,8 @@ public class CustomQueue implements ICustomQueue {
     if (isEmpty()) {
       return null;
     }
-    Integer value = data[0];
-    System.arraycopy(data, 1, data, 0, back - 2);
-    back--;
-    return value;
+    back = (back + 1) % data.length;
+    return data[back];
   }
 
   @Override
@@ -60,7 +57,8 @@ public class CustomQueue implements ICustomQueue {
     if (isEmpty()) {
       throw new IllegalStateException("Queue is Empty!");
     }
-    return data[0];
+
+    return data[(back - 1 + data.length) % data.length];
   }
 
   @Override
@@ -71,11 +69,11 @@ public class CustomQueue implements ICustomQueue {
     return data[0];
   }
 
-  public boolean isFull() {
-    return back == data.length;
+  private final boolean isEmpty() {
+    return front == back;
   }
 
-  public boolean isEmpty() {
-    return back == 0;
+  private final boolean isFull() {
+    return front != back;
   }
 }
