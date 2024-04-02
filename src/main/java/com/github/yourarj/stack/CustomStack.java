@@ -1,7 +1,7 @@
 package com.github.yourarj.stack;
 
 public class CustomStack {
-  private final int[] data;
+  protected int[] data;
   private int top;
   private static final int DEFAULT_SIZE = 10;
 
