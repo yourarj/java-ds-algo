@@ -38,8 +38,6 @@ class LetterCombinationOfPhoneNumberTest {
     List<String> expected =
         List.of("tw", "tx", "ty", "tz", "uw", "ux", "uy", "uz", "vw", "vx", "vy", "vz");
     List<String> output = LetterCombinationOfPhoneNumber.letterCombinations(digits);
-    System.out.printf("Expected: %s\n", expected);
-    System.out.printf("Actual: %s\n", output);
     assertIterableEquals(expected, output);
   }
 
