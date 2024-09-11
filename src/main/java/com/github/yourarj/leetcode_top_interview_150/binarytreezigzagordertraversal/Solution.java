@@ -1,6 +1,6 @@
 package com.github.yourarj.leetcode_top_interview_150.binarytreezigzagordertraversal;
 
-import com.github.yourarj.leetcode_top_interview_150.common.ListNode;
+import com.github.yourarj.leetcode_top_interview_150.common.TreeNode;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -12,12 +12,12 @@ import java.util.List;
  * TreeNode right) { this.val = val; this.left = left; this.right = right; } }
  */
 class Solution {
-  public List<List<Integer>> zigzagLevelOrder(ListNode.TreeNode root) {
+  public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
     final List<List<Integer>> res = new ArrayList<>();
 
     if (null == root) return res;
 
-    Deque<ListNode.TreeNode> queue = new LinkedList<>();
+    Deque<TreeNode> queue = new LinkedList<>();
     queue.add(root);
 
     while (!queue.isEmpty()) {
@@ -25,7 +25,7 @@ class Solution {
       List<Integer> list = new ArrayList<>(size);
       for (int i = 0; i < size; i++) {
         // when going
-        ListNode.TreeNode curr = queue.remove();
+        TreeNode curr = queue.remove();
         list.add(curr.val);
         if (curr.left != null) queue.add(curr.left);
         if (curr.right != null) queue.add(curr.right);

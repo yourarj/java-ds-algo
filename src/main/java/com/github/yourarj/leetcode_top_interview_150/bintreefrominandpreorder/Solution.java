@@ -1,6 +1,6 @@
 package com.github.yourarj.leetcode_top_interview_150.bintreefrominandpreorder;
 
-import com.github.yourarj.leetcode_top_interview_150.common.ListNode;
+import com.github.yourarj.leetcode_top_interview_150.common.TreeNode;
 
 /**
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode left; TreeNode
@@ -8,16 +8,15 @@ import com.github.yourarj.leetcode_top_interview_150.common.ListNode;
  * TreeNode right) { this.val = val; this.left = left; this.right = right; } }
  */
 class Solution {
-  public ListNode.TreeNode buildTree(int[] preorder, int[] inorder) {
+  public TreeNode buildTree(int[] preorder, int[] inorder) {
     return helper(0, 0, inorder.length - 1, preorder, inorder);
   }
 
-  public ListNode.TreeNode helper(
-      int preStart, int inStart, int inEnd, int[] preorder, int[] inorder) {
+  public TreeNode helper(int preStart, int inStart, int inEnd, int[] preorder, int[] inorder) {
     if (preStart > preorder.length - 1 || inStart > inEnd) {
       return null;
     }
-    ListNode.TreeNode root = new ListNode.TreeNode(preorder[preStart]);
+    TreeNode root = new TreeNode(preorder[preStart]);
     int inIndex = 0; // Index of current root in inorder
     for (int i = inStart; i <= inEnd; i++) {
       if (inorder[i] == root.val) {

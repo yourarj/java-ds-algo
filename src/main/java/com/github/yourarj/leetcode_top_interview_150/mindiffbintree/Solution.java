@@ -1,12 +1,12 @@
 package com.github.yourarj.leetcode_top_interview_150.mindiffbintree;
 
-import com.github.yourarj.leetcode_top_interview_150.common.ListNode;
+import com.github.yourarj.leetcode_top_interview_150.common.TreeNode;
 
 class Solution {
   Integer last = null;
   int min = Integer.MAX_VALUE;
 
-  public int getMinimumDifference(ListNode.TreeNode root) {
+  public int getMinimumDifference(TreeNode root) {
     if (root == null) {
       return min;
     }
