@@ -1,14 +1,14 @@
 package com.github.yourarj.leetcode_top_interview_150.sumroottoleafnumbers;
 
-import com.github.yourarj.leetcode_top_interview_150.common.ListNode;
+import com.github.yourarj.leetcode_top_interview_150.common.TreeNode;
 
 class Solution {
-  public int sumNumbers(ListNode.TreeNode root) {
+  public int sumNumbers(TreeNode root) {
     int ss = sum(root, 0);
     return ss;
   }
 
-  public int sum(ListNode.TreeNode root, int s) {
+  public int sum(TreeNode root, int s) {
     if (root == null) {
       return s;
     }
