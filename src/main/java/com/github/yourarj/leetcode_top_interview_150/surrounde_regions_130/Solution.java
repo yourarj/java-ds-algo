@@ -1,6 +1,5 @@
 package com.github.yourarj.leetcode_top_interview_150.surrounde_regions_130;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -23,10 +22,6 @@ class Solution {
         if (board[i][j] == 'O') board[i][j] = 'X';
         else if (board[i][j] == '#') board[i][j] = 'O';
       }
-    }
-
-    for (char[] chars : board) {
-      System.out.println(Arrays.toString(chars));
     }
   }
 
