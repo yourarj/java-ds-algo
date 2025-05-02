@@ -1,4 +1,4 @@
-package com.github.yourarj.leetcode_top_interview_150.number_of_islands_200;
+package com.github.yourarj.leetcode_top_interview_150.prob_200_number_of_islands;
 
 import java.util.LinkedList;
 import java.util.Queue;

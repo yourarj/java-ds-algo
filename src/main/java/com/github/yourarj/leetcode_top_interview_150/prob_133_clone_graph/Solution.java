@@ -1,4 +1,4 @@
-package com.github.yourarj.leetcode_top_interview_150.clone_graph_133;
+package com.github.yourarj.leetcode_top_interview_150.prob_133_clone_graph;
 
 import java.util.ArrayList;
 import java.util.HashMap;

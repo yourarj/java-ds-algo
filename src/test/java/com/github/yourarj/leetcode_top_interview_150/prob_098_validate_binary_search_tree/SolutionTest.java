@@ -1,6 +1,4 @@
-package com.github.yourarj.leetcode_top_interview_150.validate_binary_search_tree_098;
-
-import static org.junit.jupiter.api.Assertions.*;
+package com.github.yourarj.leetcode_top_interview_150.prob_098_validate_binary_search_tree;
 
 import com.github.yourarj.leetcode_top_interview_150.common.TreeNode;
 import org.junit.jupiter.api.Assertions;

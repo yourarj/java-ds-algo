@@ -1,4 +1,4 @@
-package com.github.yourarj.leetcode_top_interview_150.surrounde_regions_130;
+package com.github.yourarj.leetcode_top_interview_150.prob_130_surrounded_regions;
 
 import java.util.LinkedList;
 import java.util.Queue;

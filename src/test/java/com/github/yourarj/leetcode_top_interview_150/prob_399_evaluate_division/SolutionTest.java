@@ -1,6 +1,4 @@
-package com.github.yourarj.leetcode_top_interview_150.evaluate_division_399;
-
-import static org.junit.jupiter.api.Assertions.*;
+package com.github.yourarj.leetcode_top_interview_150.prob_399_evaluate_division;
 
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
