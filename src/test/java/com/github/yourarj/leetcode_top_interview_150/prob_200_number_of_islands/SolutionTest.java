@@ -1,6 +1,4 @@
-package com.github.yourarj.leetcode_top_interview_150.number_of_islands_200;
-
-import static org.junit.jupiter.api.Assertions.*;
+package com.github.yourarj.leetcode_top_interview_150.prob_200_number_of_islands;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

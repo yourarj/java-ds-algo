@@ -1,4 +1,4 @@
-package com.github.yourarj.leetcode_top_interview_150.kth_smallest_element_230;
+package com.github.yourarj.leetcode_top_interview_150.prob_230_kth_smallest_element;
 
 import com.github.yourarj.leetcode_top_interview_150.common.TreeNode;
 
