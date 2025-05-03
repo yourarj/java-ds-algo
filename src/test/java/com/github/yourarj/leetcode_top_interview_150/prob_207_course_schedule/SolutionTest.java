@@ -46,7 +46,7 @@ class SolutionTest {
 
   @Test
   void canFinish_05() {
-    final int numCourse = 8;
+    final int numCourse = 5;
     final int[][] prerequisites = {{1, 0}, {2, 1}, {3, 4}, {4, 3}};
     final boolean expected = false;
     final boolean actual = target.canFinish(numCourse, prerequisites);

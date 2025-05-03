@@ -18,7 +18,7 @@ class Solution {
     // populate graph
     for (int[] prerequisite : prerequisites) graph[prerequisite[1]].add(prerequisite[0]);
 
-    for (int i = 0; i < graph.length && !visited.contains(i); i++) {
+    for (int i = 0; i < numCourses; i++) {
       currVisited.clear();
 
       if (dfs(i, graph, visited, currVisited)) return false;
