@@ -1,28 +1,3 @@
-<div class="text">
-
-<style>table{ display: inline-table !important; width: 100% !important; } th:nth-child(2) { width: 20% !important; }</style>
-
-<div id="table_of_content">
-
-Table of Content
-
-* [Array](#array)
-* [String](#string)
-* [Linked List](#linked-list)
-* [Searching](#searching)
-* [Sorting](#sorting)
-* [Stack](#stack)
-* [Queue](#queue)
-* [Tree](#tree)
-* [Graph](#graph)
-* [Trie](#trie)
-* [Heap and Hash](#heap-and-hash)
-* [BitMagic](#bitmagic)
-* [Recursion and Backtracking](#recursion-and-backtracking)
-* [Dynamic Programming](#dynamic-programming)
-
-</div>
-
 ## <span>Data Structure & Algorithms</span>
 
 ### ****Array****
@@ -274,5 +249,3 @@ repeated calls for same inputs, we can optimize it using Dynamic Programming.</s
 | [<span>The Jump Game</span>](https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array)            | [<span>Solve</span>](https://practice.geeksforgeeks.org/problems/jump-game/1/?page=2&company[]=Amazon&category[]=Dynamic%20Programming&sortBy=)                                  |
 | [<span>Special Keyboard</span>](https://www.geeksforgeeks.org/how-to-print-maximum-number-of-a-using-given-four-keys)        | [<span>Solve</span>](https://practice.geeksforgeeks.org/problems/special-keyboard3018/1/?page=3&company[]=Amazon&category[]=Dynamic%20Programming&sortBy=)                       |
 | [<span>Longest Palindromic Subsequence</span>](https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12)          | [<span>Solve</span>](https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1/?page=3&company[]=Amazon&category[]=Dynamic%20Programming&sortBy=) |
-
-</div>
