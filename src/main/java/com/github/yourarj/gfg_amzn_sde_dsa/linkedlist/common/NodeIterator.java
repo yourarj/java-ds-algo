@@ -2,10 +2,10 @@ package com.github.yourarj.gfg_amzn_sde_dsa.linkedlist.common;
 
 import java.util.Iterator;
 
-class LinkedListIterator<T> implements Iterator<Node<T>> {
+class NodeIterator<T> implements Iterator<Node<T>> {
   private Node<T> curr;
 
-  public LinkedListIterator(Node<T> curr) {
+  public NodeIterator(Node<T> curr) {
     this.curr = curr;
   }
 
