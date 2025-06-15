@@ -1,4 +1,4 @@
-package com.github.yourarj.sorting.sort_array_of_012s;
+package com.github.yourarj.gfg_amzn_sde_dsa.sorting.sort_array_of_012s;
 
 public class Solution {
   public static void sort012(final int[] arr) {
